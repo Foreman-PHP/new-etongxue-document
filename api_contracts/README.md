@@ -372,36 +372,45 @@
 }
 ```
 
-### 云班牌 班级
+### 云班牌 班级 /api//cloud/getGradesInfo
 
 展示云班牌上的班级信息 班级名称,班主任,班长,学生人数,班级照片
 
-#### 云班牌 班级
+#### 1: 请求参数
+
+| 参数名        | 是否必须        | 参数类型 | 说明
+| ------------- | :-------------: | -----:   | -----:
+| code          | Yes             | String   | 云班牌设备码
+
+
+#### 响应数据: json 格式
 
 ```json
 {
     "code":1000,
     "msg" :"",
     "data": {
-        "class_name"    : "班级名称", // 班级名称
-        "class_teacher" : "班主任", // 班主任
-        "class_number"  : {
-            "total" : "20", // 总人数
-            "man"   : "10", // 男生
-            "woman" : "10", // 女生
+        "grades": {
+            "name": "二班",
+            "teacher": "班主任未设置",
+            "number" : {
+                "total" : "20", // 总人数
+                "man"   : "10", // 男生
+                "woman" : "10", // 女生
         },
-        "class_img" : [  //班级风采 返回几个展示几个
-            "class_img" : "xxx/xxx.jpg",
-            "class_img" : "xxx/xxx.jpg",
-            "class_img" : "xxx/xxx.jpg",
-        ]
+        "photo": [  //班级风采 返回几个展示几个
+                "class_img" : "xxx/xxx.jpg",
+                "class_img" : "xxx/xxx.jpg",
+                "class_img" : "xxx/xxx.jpg",
+            ]
+        }
     }
 }
 ```
 
 ### 云班牌 课表信息
 
-展示云班牌上的课表信息 课程名称,班主任,班长,学生人数,班级照片
+展示云班牌上的课表信息 课程名称
 
 #### 云班牌 课表信息
 
