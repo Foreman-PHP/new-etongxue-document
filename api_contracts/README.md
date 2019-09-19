@@ -337,7 +337,7 @@
 
 ### 云班牌 学校  /api/cloud/getSchoolInfo
 
-展示云班牌上的学校信息 学校名称,学校LOGO,校训,轮播视频
+展示云班牌上的学校信息 学校名称,学校LOGO,校训
 
 #### 1: 请求参数
 
@@ -361,20 +361,15 @@
                 "size": "",
                 "type": ""
             }
-        },
-        "area": {
-            "video": "/xxx/xxx/xxx",
-            "size": "",
-            "type": ""
         }
-    },
+    }
     }
 }
 ```
 
-### 云班牌 班级 /api//cloud/getGradesInfo
+### 云班牌 班级  /api/cloud/getGradesInfo
 
-展示云班牌上的班级信息 班级名称,班主任,班长,学生人数,班级照片
+展示云班牌上的班级信息 班级名称,班主任,班长,学生人数,班级照片,轮播视频
 
 #### 1: 请求参数
 
@@ -391,20 +386,29 @@
     "msg" :"",
     "data": {
         "grades": {
-            "name": "二班",
+            "name": "16计算机应用技术一",
             "teacher": "班主任未设置",
-            "number" : {
-                "total" : "20", // 总人数
-                "man"   : "10", // 男生
-                "woman" : "10", // 女生
-        },
-        "photo": [  //班级风采 返回几个展示几个
-                "class_img" : "xxx/xxx.jpg",
-                "class_img" : "xxx/xxx.jpg",
-                "class_img" : "xxx/xxx.jpg",
-            ]
+            "monitor": "班长未设置",
+            "number": {
+                "total": 6,  // 总人数  
+                "man": 3,    
+                "woman": 3  
+            },
+            "photo": [
+                {
+                    "class_resource": "xxxx"  // 图片地址 有几张显示几张
+                },
+                {
+                    "class_resource": "xxxxx"
+                }
+            ],
+            "video": {
+                "class_resource": "xxxxxxxxx",  //视频地址
+                "size": "20kb",
+                "format": "mp4"
+            }
         }
-    }
+    }    
 }
 ```
 
