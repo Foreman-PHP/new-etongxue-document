@@ -412,9 +412,9 @@
 }
 ```
 
-### 云班牌 课表信息
+### 云班牌 课表信息 /cloud/getCourseInfo
 
-展示云班牌上的课表信息 课程名称  /cloud/getCourseInfo
+展示云班牌上的课表信息 
 
 #### 1: 请求参数
 
@@ -481,9 +481,4 @@
     "data" : "iVBORw0KGgoAAAANSUhEUgAAAbIAAAGyAQM......" // 二维码 base64转成字符串
 }
 ```
-
-### 云班牌 天气信息
-
-展示云班牌上的天气接由华三提供
-
 
