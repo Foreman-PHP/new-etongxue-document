@@ -424,16 +424,18 @@
     "msg" :"",
     "data":[
         { 
-            "number"         : "第5节", // 课节
-            "course_time"    : "12:35 - 14:05", // 课程时间
-            "course_place"   : "教学楼A栋101室", // 课程地点
-            "course_teacher" : "王老师", // 课程老师
-            "course_name"    : "计算机科学" //课程名称
+            "course_number"    : "5", // 课节
+            "config_starttime" : "16:00:00", // 课程开始时间
+            "config_endtime"   : "16:45:00", // 课程结束时间
+            "course_room"      : "教学楼A栋101室", // 课程地点
+            "course_teacher"   : "王老师", // 课程老师
+            "course_name"      : "计算机科学" //课程名称
         },
         { 
-            "number"         : "第5节", // 课节
-            "course_time"    : "12:35 - 14:05", // 课程时间
-            "course_place"   : "教学楼A栋101室", // 课程地点
+            "course_number"  : "5", // 课节
+            "course_time"    : "17:10:00", // 课程时间
+            "course_time"    : "17:55:00", // 课程时间
+            "course_room"    : "教学楼A栋101室", // 课程地点
             "course_teacher" : "王老师", // 课程老师
             "course_name"    : "计算机科学" //课程名称
         }
