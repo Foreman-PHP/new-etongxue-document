@@ -396,14 +396,18 @@
             },
             "photo": [
                 {
-                    "class_resource": "xxxx"  // 图片地址 有几张显示几张
+                    "path": "www.baidu.com",
+                    "size": "10kb",
+                    "format": "png"
                 },
                 {
-                    "class_resource": "xxxxx"
+                    "path": "www.bai2.com",
+                    "size": "11kb",
+                    "format": "png"
                 }
             ],
             "video": {
-                "class_resource": "xxxxxxxxx",  //视频地址
+                "path": "xxxxxxxxx",  //视频地址
                 "size": "20kb",
                 "format": "mp4"
             }
@@ -429,12 +433,12 @@
     "msg" :"",
     "data":[
         { 
-            "course_number"    : "5", // 课节
-            "config_starttime" : "16:00:00", // 课程开始时间
-            "config_endtime"   : "16:45:00", // 课程结束时间
-            "course_room"      : "教学楼A栋101室", // 课程地点
-            "course_teacher"   : "王老师", // 课程老师
-            "course_name"      : "计算机科学" //课程名称
+            "course_number"  : "5", // 课节
+            "start_time"     : "16:00:00", // 课程开始时间
+            "end_time"       : "16:45:00", // 课程结束时间
+            "course_room"    : "教学楼A栋101室", // 课程地点
+            "course_teacher" : "王老师", // 课程老师
+            "course_name"    : "计算机科学" //课程名称
         },
         { 
             "course_number"  : "5", // 课节
@@ -449,11 +453,16 @@
 }
 ```
 
-### 云班牌 考勤统计
+### 云班牌 考勤统计 api/cloud/getAttendanceStatistic
 
 展示云班牌上的考勤统计 已签,未签,请假
 
-#### 云班牌 考勤统计
+#### 1: 请求参数
+
+| 参数名        | 是否必须        | 参数类型 | 说明
+| ------------- | :-------------: | -----:   | -----:
+| code          | Yes             | String   | 云班牌设备码
+
 
 ```json
 {
