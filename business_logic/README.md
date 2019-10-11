@@ -25,4 +25,31 @@
 
 
 
-## 云班牌
+## 人脸服务
+- 帕菲特 不去实现华三的基础数据接口 只其中的实现人脸识别接口
+  
+    #### 请求参数
+    | 参数名         | 是否必须        | 参数类型   | 说明                                      
+    | ------------- | :-------------: | -----:   | -----:                                   
+    | student_id    | Yes             | String   | 学生UID                    
+    | file          | Yes             | file     | 人脸照片文件
+    | category      | Yes             | string   | 类型, 固定为face
+
+#### 参数说明
+- 在原来华三的接口文档中需要学生的UID参数 (这个参数是基础数据接口中添加学生接口返回的)
+- 现在改成 这个参数由 帕菲特 这边来生成用来代替华三生成的UID 华三只需要存帕菲特这边的UID
+
+## 考勤数据
+- 该接口是帕菲特编写,华三请求, 人脸识别到请求该接口
+
+| 参数名         | 是否必须         | 参数类型 | 说明
+| ------------- | :-------------: | -----: | -----:
+| code          | Yes             | String | 云班牌设备码
+| student_id    | Yes             | String | 学生UID
+| student_name  | Yes             | String | 学生姓名
+| grades_name   | Yes             | String | 班级名称
+| classroom     | Yes             | String | 教室名称(当前上课教室)
+| course_num    | Yes             | String | 课节(当前上的课)
+| verify_time   | Yes             | String | 识别的时间(时间戳)
+
+
