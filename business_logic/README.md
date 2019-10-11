@@ -46,10 +46,6 @@
 | ------------- | :-------------: | -----: | -----:
 | code          | Yes             | String | 云班牌设备码
 | student_id    | Yes             | String | 学生UID
-| student_name  | Yes             | String | 学生姓名
-| grades_name   | Yes             | String | 班级名称
-| classroom     | Yes             | String | 教室名称(当前上课教室)
-| course_num    | Yes             | String | 课节(当前上的课)
 | verify_time   | Yes             | String | 识别的时间(时间戳)
 
 
