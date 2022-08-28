@@ -8,13 +8,16 @@ module.exports = {
         nav: [
             {text: '首页', link: '/'},
             {
+                text: '搭建开发环境',link: '/setup/'
+            },
+            {
                 text: '接口设计',link: '/api_contracts/'
             },
             {
                 text: '数据库设计',link: '/database/'
             },
             {
-                text: '功能测试', link:'/unit_tests/'
+                text: '功能测试与性能优化', link:'/unit_tests/'
             },
             {
                 text: '业务逻辑的实现', link:'/business_logic/'
